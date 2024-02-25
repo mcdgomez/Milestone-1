@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Grading | STUDENT INFORMATION SYSTEM</title>
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href="courses.html"><img src="images/addu_icon.png" clas></a>
+            <h1>ATENEO DE DAVAO UNIVERSITY</h1>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="students.html">STUDENTS</a></li>
+                    <li><a href="teachers.html">TEACHERS</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                </ul>
+            </div>
+        </nav> 
+        <hr>
+    </section>
+
+    <p>Class List</p>
+
+    <table>
+        <tr>
+            <th>Code/Subject:</th>
+            <td>4-114/IT 2241 - EVENT DRIVEN PROGRAMMING</td>
+        </tr>
+        <tr>
+            <th>Schedule:</th>
+            <td>* 2:05P-4:35P F605 TTH *</td>
+        </tr>
+        <tr>
+            <th>Academic Period</th>
+            <td>2nd Semester 2023-2024</td>
+        </tr>
+        <tr>
+            <th>Grading Period</th>
+            <td>Final</td>
+        </tr>
+    </table>
+
+    <div class="gradeEncodingGuidelines">
+        <h1>Grade Encoding Guidelines</h1>
+
+        <ol>
+            <li>Grades in the NEW Grading System must be encoded as A,B+,B,C+,C,D,F,FD,WP.</li>
+            <li>Non FYDP Grades in the OLD Grading System must be from 65-100</li>
+            <li>FYDP Grades in the NEW Grading System must be encoded as A,B+,B,C+,C,D,F,FD,WP.</li>
+            <li>FYDP Grades in the OLD Grading System must be encoded as <br>
+                O - Outstanding, HS - Highly Satisfactory, S - Satisfactory, MS - Moderately Satisfactory, F - Fair, P - Poor.
+            </li>
+            <li>NE Grades will not be accepted. Students who have not taken exams must be provided the minimum grade. After the exam has been taken, the teacher should file a grade correction from at the Registrar's office.</li>
+            <li>Select AUD for Audit students.</li>
+        </ol>
+    </div>
+
+    <div class="listOfStudents">
+        <table>
+            <tr>
+                <th>CODE</th>
+                <th>STUDENT NAME</th>
+                <th>FINAL</th>
+                <th>GRD. TYPE</th>
+                <th>YEAR LVL</th>
+                <th>ACAD.STATUS</th>
+                <th>YR. OF ENTRY</th>
+                <th>ENTRY YR. LVL</th>
+            </tr>
+            <tr>
+                <td>1026</td>
+                <td>ACLAIDE, HANNAH BEA REYES</td>
+                <td>
+                    <select>
+                        <option value="blank"> </option>
+                        <option value="gradeA">Grade A</option>
+                        <option value="gradeB">Grade B</option>
+                        <option value="gradeC">Grade C</option>
+                    </select>
+                </td>
+                <td>NEW</td>
+                <td>2</td>
+                <td>Regular</td>
+                <td>2021</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>5629</td>
+                <td>ANO, JESUS RICARDO TEJANO</td>
+                <td>
+                    <select>
+                        <option value="blank"> </option>
+                        <option value="gradeA">Grade A</option>
+                        <option value="gradeB">Grade B</option>
+                        <option value="gradeC">Grade C</option>
+                    </select>
+                </td>
+                <td>NEW</td>
+                <td>2</td>
+                <td>Regular</td>
+                <td>2021</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>6739</td>
+                <td>ARAPOC, BEATRIC JAN GOMEZ</td>
+                <td>
+                    <select>
+                        <option value="blank"> </option>
+                        <option value="gradeA">Grade A</option>
+                        <option value="gradeB">Grade B</option>
+                        <option value="gradeC">Grade C</option>
+                    </select>
+                </td>
+                <td>NEW</td>
+                <td>2</td>
+                <td>Regular</td>
+                <td>2021</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>6629</td>
+                <td>BELEN, HALEY MACKENZIE UBALDE</td>
+                <td>
+                    <select>
+                        <option value="blank"> </option>
+                        <option value="gradeA">Grade A</option>
+                        <option value="gradeB">Grade B</option>
+                        <option value="gradeC">Grade C</option>
+                    </select>
+                </td>
+                <td>NEW</td>
+                <td>2</td>
+                <td>Regular</td>
+                <td>2021</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>6639</td>
+                <td>DAGATAN, TRISTAN KYLE MALNEGRO</td>
+                <td>
+                    <select>
+                        <option value="blank"> </option>
+                        <option value="gradeA">Grade A</option>
+                        <option value="gradeB">Grade B</option>
+                        <option value="gradeC">Grade C</option>
+                    </select>
+                </td>
+                <td>NEW</td>
+                <td>2</td>
+                <td>Regular</td>
+                <td>2021</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+
+    <style>
+        .header{
+            min-height: 100vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1{
+            font-size: 20px;
+            color: darkblue;
+        }
+        nav img{
+            width: 150px;
+            display: flex;
+            position: relative;
+            left: -70px;
+        }
+        .nav-links{
+            flex: 1;
+            text-align: right;
+        }
+
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+
+        .nav-links ul li a{
+            color: darkblue;
+            text-decoration: none;
+            font-size: 15px;
+            /* font-weight: 150; */
+        }
+
+        .nav-links ul li::after{
+            content: '';
+            width:0%;
+            height: 2px;
+            background: darkblue;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        } 
+
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+
+        body, h1, table, th, td, p, strong, ul, li {
+            margin: 1;
+            padding: 1;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            border: 1px solid #ffffff;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th:first-child {
+            font-weight: bold;
+        }
+
+        td, th:not(:first-child) {
+            border: 1px solid #ffffff;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr {
+            background-color: #dddddd;
+        }
+    </style>
+</body>
+</html>
