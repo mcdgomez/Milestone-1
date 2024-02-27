@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pre-Registration Courses | STUDENT INFORMATION SYSTEM</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the styles.css file -->
 </head>
 <body>
     
@@ -22,87 +23,97 @@
 
         <div class="sis_container_left">
             <div class="region region-sidebar-left">
-        <div id="block-block-3" class="block block-block">
-    
-        
-      <div class="content">
-              <!-- START PROFILE -->
-          <div class="sis_profile">
-            <div class="sis_profile_picture">
-                <div class="user-picture">
-        <img src="https://sis.addu.edu.ph/sites/default/files/pictures/picture.jpg" alt="emaestimada's picture" title="emaestimada's picture">  </div>
+                <div id="block-block-3" class="block block-block">
+                    <div class="content">
+                        <!-- START PROFILE -->
+                        <div class="sis_profile">
+                            <div class="sis_profile_picture">
+                                <div class="user-picture">
+                                    <img src="https://sis.addu.edu.ph/sites/default/files/pictures/picture.jpg" alt="emaestimada's picture" title="emaestimada's picture">
+                                </div>
+                            </div>
+                            <div class="sis_clr_left"></div>
+                        </div>
+                        <!-- END PROFILE -->
+                    </div>
+                </div>
+                <div id="block-system-navigation" class="block block-system block-menu">
+                    <h2 class="block_title">TASK</h2>
+                    <div class="content">
+                        <ul class="menu">
+                            <li class="first leaf"><a href="index.html" title="">My Enrollment</a></li>
+                            <li class="leaf"><a href="index.html">My Grades</a></li>
+                            <li class="leaf"><a href="/curriculum">My Curriculum</a></li>
+                            <li class="leaf"><a href="teachers.html" title="">Grade Students</a></li>
+                            <li class="leaf"><a href="/preregistration" title="">Pre-registration</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="block-menu-menu-forms" class="block block-menu"></div>
             </div>
-            <div class="sis_clr_left"></div>
-          </div>
-          <!-- END PROFILE -->  </div>
-    </div><div id="block-system-navigation" class="block block-system block-menu">
-    
-        <h2 class="block_title">TASK</h2>
-      
-      <div class="content">
-        <ul class="menu"><li class="first leaf"><a href="index.html" title="">My Enrollment</a></li>
-    <li class="leaf"><a href="index.html">My Grades</a></li>
-    <li class="leaf"><a href="/curriculum">My Curriculum</a></li>
-    <li class="leaf"><a href="teachers.html" title="">Grade Students</a></li>
-    <li class="leaf"><a href="/preregistration" title="">Pre-registration</a></li>
-    </ul>  </div>
-    </div><div id="block-menu-menu-forms" class="block block-menu">
-    
-    </div>  </div>
-          
         </div>
+        
+        <div class="sis_container_right">
+            <header class="report-header">
+                <h1>Pre-registration</h1>
+            </header>
 
-    <div class="sis_container_right">
-        <table>
-            <tr>
-                <th>Course Code</th>
-                <th>Course Name</th>
-                <th>No. of Slots</th>
-                <th>No. of Slots Remaining</th>
-                <th>Start Time</th>
-                <th>End Time</th>
-                <th>Days</th>
-            </tr>
-            <tr>
-                <td>ASF 1203</td>
-                <td>NATIONAL SERVICE TRAINING PROGRAM - CIVIC WELFARE TRAINING SERVICE 2</td>
-                <td>45</td>
-                <td>10</td>
-                <td>10:00 AM</td>
-                <td>1:00 PM</td>
-                <td>MW</td>
-            </tr>
-            <tr>
-                <td>CS 2135</td>
-                <td>DATA STRUCTURES AND ALGORITHMS</td>
-                <td>45</td>
-                <td>21</td>
-                <td>7:40 AM</td>
-                <td>9:40 PM</td>
-                <td>TTH</td>
-            </tr>
-            <tr>
-                <td>IT 2239</td>
-                <td>FUNDAMENTALS OF DATABASE SYSTEMS</td>
-                <td>45</td>
-                <td>7</td>
-                <td>6:00 PM</td>
-                <td>7:30 PM</td>
-                <td>MW</td>
-            </tr>
-            <tr>
-                <td>IT 2243</td>
-                <td>STATISTICS FOR RESEARCH</td>
-                <td>35</td>
-                <td>1</td>
-                <td>9:20 AM</td>
-                <td>10:50 AM</td>
-                <td>TTH</td>
-            </tr>
-        </table>
-    </div>
+            <div class="sis_container_right">
+                <!-- Search Button -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit">Search</button>
+                </div>
 
-    <style>
+                <table>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>No. of Slots</th>
+                        <th>No. of Slots Remaining</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Days</th>
+                    </tr>
+                    <tr>
+                        <td>ASF 1203</td>
+                        <td>NATIONAL SERVICE TRAINING PROGRAM - CIVIC WELFARE TRAINING SERVICE 2</td>
+                        <td>45</td>
+                        <td>10</td>
+                        <td>10:00 AM</td>
+                        <td>1:00 PM</td>
+                        <td>MW</td>
+                    </tr>
+                    <tr>
+                        <td>CS 2135</td>
+                        <td>DATA STRUCTURES AND ALGORITHMS</td>
+                        <td>45</td>
+                        <td>21</td>
+                        <td>7:40 AM</td>
+                        <td>9:40 PM</td>
+                        <td>TTH</td>
+                    </tr>
+                    <tr>
+                        <td>IT 2239</td>
+                        <td>FUNDAMENTALS OF DATABASE SYSTEMS</td>
+                        <td>45</td>
+                        <td>7</td>
+                        <td>6:00 PM</td>
+                        <td>7:30 PM</td>
+                        <td>MW</td>
+                    </tr>
+                    <tr>
+                        <td>IT 2243</td>
+                        <td>STATISTICS FOR RESEARCH</td>
+                        <td>35</td>
+                        <td>1</td>
+                        <td>9:20 AM</td>
+                        <td>10:50 AM</td>
+                        <td>TTH</td>
+                    </tr>
+                </table>
+
+                 <style>
         body, h1, table, th, td, p, strong, ul, li {
             margin: 1;
             padding: 1;
@@ -201,5 +212,13 @@
 
         /* sa may task na section */
     </style>
+
+                <!-- Add Button -->
+                <div class="add-button-container">
+                    <button type="button">Add Subject</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
