@@ -1,4 +1,3 @@
-// Define your dummy data as an array of objects
 const gradesData = [
     {
       subjNo: "CS 2240",
@@ -52,10 +51,10 @@ const gradesData = [
     }
   ];
   
-  // Now you can use this array of objects to populate your table dynamically in JavaScript
+  // populate table
   const tbody = document.querySelector('.grades-table tbody');
   
-  // Loop through the gradesData array and create table rows dynamically
+  // Loop gradesData array and create table rows
   gradesData.forEach(data => {
     const tr = document.createElement('tr');
     tr.innerHTML = `
