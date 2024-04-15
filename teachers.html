@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher Grading | STUDENT INFORMATION SYSTEM</title>
+  <meta charset="UTF-8">
+  <title>My Grades | STUDENT INFORMATION SYSTEM</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-    
-    <div class="sis_header">
-        <div class="sis_logo" style="float:left;margin-left:80px;">
-            <img height="55" src="https://sis.addu.edu.ph/sites/default/files/addu_2.png" alt="Home">
-        </div>
-        <div style="float:left;width:400px;margin-top:10px;">
-            <div class="sis_header_title"><a href="/">STUDENT INFORMATION SYSTEM</a></div>
-            <div class="sis_header_slogan">ATENEO DE DAVAO UNIVERSITY</div>
-        </div>
-    </div>
+  <!-- top navbar -->
+  <nav class="navbar navbar-dark" style="background-color: #3b5998;">
+    <a class="navbar-brand d-flex align-items-center ms-5" href="#">
+      <img src="https://sis.addu.edu.ph/sites/default/files/addu_2.png" width="50" height="50" class="d-inline-block align-top" alt="">
+      <div class="ms-2">
+        <h6 class="m-0">STUDENT INFORMATION SYSTEM</h6>
+        <p class="m-0">Ateneo de Davao University</p>
+      </div>
+    </a> 
+  </nav>
+  <!-- top navbar -->
 
-
-
-    <div class="sis_container">
-        <p>Class List</p>
-
-        <div class="sis_container_left">
-            <div class="region region-sidebar-left">
-        <div id="block-block-3" class="block block-block">
-    
-        
-      <div class="content">
-              <!-- START PROFILE -->
-          <div class="sis_profile">
-            <div class="sis_profile_picture">
-                <div class="user-picture">
-        <img src="https://sis.addu.edu.ph/sites/default/files/pictures/picture.jpg" alt="emaestimada's picture" title="emaestimada's picture">  </div>
-            </div>
-            <div class="sis_clr_left"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- side navbar -->
+      <div class="col-2">
+        <div class="flex-shrink-0 p-3 bg-white">
+          <div>
+            <a class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+              <img src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="" class="img-fluid" style="max-width: 50px;">
+            </a>
           </div>
-          <!-- END PROFILE -->  </div>
-    </div><div id="block-system-navigation" class="block block-system block-menu">
-    
-        <h2 class="block_title">TASK</h2>
-      
-      <div class="content">
-        <ul class="menu"><li class="first leaf"><a href="index.html" title="">My Enrollment</a></li>
-    <li class="leaf"><a href="index.html">My Grades</a></li>
-    <li class="leaf"><a href="teachers.html" title="">Grade Students</a></li>
-    <li class="leaf"><a href="courses.html" title="">Pre-registration</a></li>
-    </ul>  </div>
-    </div><div id="block-menu-menu-forms" class="block block-menu">
-    
-    </div>  </div>
-          
+          <div>
+            <h6>TASK</h6>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="index.html" title="">My Enrollment</a></li>
+              <li class="list-group-item"><a href="index.html">My Grades</a></li>
+              <li class="list-group-item"><a href="teachers.html" title="">Grade Students</a></li>
+              <li class="list-group-item"><a href="courses.html" title="">Pre-registration</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <!-- side navbar -->
 
-        <div class="sis_container_right">
-            <table>
+      <!-- Content -->
+      <div class="col-10">
+        <table class="table table-bordered my-3">
+            <thead>
                 <tr>
                     <th>Code/Subject:</th>
                     <td>4-114/IT 2241 - EVENT DRIVEN PROGRAMMING</td>
@@ -71,556 +61,50 @@
                     <th>Grading Period</th>
                     <td>Final</td>
                 </tr>
-            </table>
-        
-            <div class="gradeEncodingGuidelines">
-                <h1>Grade Encoding Guidelines</h1>
-        
-                <ol>
-                    <li>Grades in the NEW Grading System must be encoded as A,B+,B,C+,C,D,F,FD,WP.</li>
-                    <li>Non FYDP Grades in the OLD Grading System must be from 65-100</li>
-                    <li>FYDP Grades in the NEW Grading System must be encoded as A,B+,B,C+,C,D,F,FD,WP.</li>
-                    <li>FYDP Grades in the OLD Grading System must be encoded as <br>
-                        O - Outstanding, HS - Highly Satisfactory, S - Satisfactory, MS - Moderately Satisfactory, F - Fair, P - Poor.
-                    </li>
-                    <li>NE Grades will not be accepted. Students who have not taken exams must be provided the minimum grade. After the exam has been taken, the teacher should file a grade correction from at the Registrar's office.</li>
-                    <li>Select AUD for Audit students.</li>
-                </ol>
-            </div>
-        
-            <div class="listOfStudents">
-                <table>
-                    <tr>
-                        <th>CODE</th>
-                        <th>STUDENT NAME</th>
-                        <th>PRELIM</th>
-                        <th>MIDTERM</th>
-                        <th>PREFINAL</th>
-                        <th>FINAL</th>
-                        <th>GRD. TYPE</th>
-                        <th>YEAR LVL</th>
-                        <th>ACAD.STATUS</th>
-                        <th>YR. OF ENTRY</th>
-                        <th>ENTRY YR. LVL</th>
-                    </tr>
-                    <tr>
-                        <td>1026</td>
-                        <td>ACLAIDE, HANNAH BEA REYES</td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>NEW</td>
-                        <td>2</td>
-                        <td>Regular</td>
-                        <td>2021</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>5629</td>
-                        <td>ANO, JESUS RICARDO TEJANO</td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>NEW</td>
-                        <td>2</td>
-                        <td>Regular</td>
-                        <td>2021</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>6739</td>
-                        <td>ARAPOC, BEATRIC JAN GOMEZ</td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>NEW</td>
-                        <td>2</td>
-                        <td>Regular</td>
-                        <td>2021</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>6629</td>
-                        <td>BELEN, HALEY MACKENZIE UBALDE</td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>NEW</td>
-                        <td>2</td>
-                        <td>Regular</td>
-                        <td>2021</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>6639</td>
-                        <td>DAGATAN, TRISTAN KYLE MALNEGRO</td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>NEW</td>
-                        <td>2</td>
-                        <td>Regular</td>
-                        <td>2021</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>3056</td>
-                        <td>DOBLI, FERDINAND JOHN FRANCISCO</td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>NEW</td>
-                        <td>2</td>
-                        <td>Regular</td>
-                        <td>2021</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>0375</td>
-                        <td>LABRADOR, THONY DANIELLE ALIBANGBANG</td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>NEW</td>
-                        <td>2</td>
-                        <td>Regular</td>
-                        <td>2021</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>2745</td>
-                        <td>LANAJA, CHRIS LAWRENCE JUAN</td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>NEW</td>
-                        <td>2</td>
-                        <td>Regular</td>
-                        <td>2021</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>1046</td>
-                        <td>MIRAFLOR, RIZEL KENT ESCOBAR</td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>NEW</td>
-                        <td>2</td>
-                        <td>Regular</td>
-                        <td>2021</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>1534</td>
-                        <td>NATIVIDAD, KARL JUSTIN ANGELO SALON</td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="blank"> </option>
-                                <option value="gradeA">Grade A</option>
-                                <option value="gradeB">Grade B</option>
-                                <option value="gradeC">Grade C</option>
-                            </select>
-                        </td>
-                        <td>NEW</td>
-                        <td>2</td>
-                        <td>Regular</td>
-                        <td>2021</td>
-                        <td>1</td>
-                    </tr>
-                </table>
-                <button type="button" onclick="alert('grades successfully submitted to the system')">Submit Grades</button>
-            </div>    
+            </thead>
+        </table>
+
+        <div>
+            <h2>Grade Encoding Guidelines</h2>
+
+            <ol>
+                <li>Grades in the NEW Grading System must be encoded as A,B+,B,C+,C,D,F,FD,WP.</li>
+                <li>Non FYDP Grades in the OLD Grading System must be from 65-100</li>
+                <li>FYDP Grades in the NEW Grading System must be encoded as A,B+,B,C+,C,D,F,FD,WP.</li>
+                <li>FYDP Grades in the OLD Grading System must be encoded as <br>
+                    O - Outstanding, HS - Highly Satisfactory, S - Satisfactory, MS - Moderately Satisfactory, F - Fair, P - Poor.
+                </li>
+                <li>NE Grades will not be accepted. Students who have not taken exams must be provided the minimum grade. After the exam has been taken, the teacher should file a grade correction from at the Registrar's office.</li>
+                <li>Select AUD for Audit students.</li>
+            </ol>
         </div>
+
+        <table class="table table-bordered my-3 listOfStudents">
+            <thead>
+                <tr>
+                    <th scope="col" style="font-size: 14px;">CODE</th>
+                    <th scope="col" style="font-size: 14px;">STUDENT NAME</th>
+                    <th scope="col" style="font-size: 14px;">PRELIM</th>
+                    <th scope="col" style="font-size: 14px;">MIDTERM</th>
+                    <th scope="col" style="font-size: 14px;">PRE-FINAL</th>
+                    <th scope="col" style="font-size: 14px;">FINAL</th>
+                    <th scope="col" style="font-size: 14px;">GRD. TYPE</th>
+                    <th scope="col" style="font-size: 14px;">YEAR LVL</th>
+                    <th scope="col" style="font-size: 14px;">ACAD. STATUS</th>
+                    <th scope="col" style="font-size: 14px;">YR. OF ENTRY</th>
+                    <th scope="col" style="font-size: 14px;">ENTRY YR. LEVEL</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <button type="button" class="btn btn-light mb-3">Submit Grades</button>
+      </div>
+      <!-- Content -->
     </div>
+  </div>
 
-
-    <style>
-        body, h1, table, th, td, p, strong, ul, li {
-            margin: 1;
-            padding: 1;
-            font-family: Arial, sans-serif;
-        }
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th {
-            border: 1px solid #ffffff;
-            text-align: left;
-            padding: 8px;
-        }
-
-        td, th:not(:first-child) {
-            border: 1px solid #ffffff;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr {
-            background-color: #dddddd;
-        }
-        .listOfStudents th{
-            background-color: #727272;
-            color: white
-        }
-        .sis_header {
-            background: #3b5998;
-            height: 60px;
-        }
-        .sis_header .sis_header_title, #sis_header .sis_header_slogan {
-            width: 90%;
-            margin: auto;
-        }
-        .sis_header .sis_header_title a {
-            color: #fff;
-            font-size: 18px;
-        }
-        .sis_header .sis_header_slogan {
-            color: #d5d2d2;
-            font-size: 11px;
-            padding: 0 0 0 25px;
-        }
-        .sis_container_right {
-            float: left;
-            width: 80%;
-            border-left: 1px dashed #c5c5c5;
-            padding-left: 20px;
-        }
-        .sis_container_left {
-            float: left;
-            width: 15%;
-        }
-        /* sa may task na section */
-        h2.block_title {
-            color: #999;
-            font-size: 12px;
-            font-weight: bold;
-            margin-bottom: 0px;
-        }
-        h2 {
-            display: block;
-            font-size: 1.5em;
-            margin-block-start: 0.83em;
-            margin-block-end: 0.83em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-weight: bold;
-        }
-
-        /* specific menu shiz */
-        ul.menu {
-            padding-left: 0px;
-            list-style-type: none !important;
-            margin: 0;
-        }
-        ul.menu {
-            border: none;
-            list-style: none;
-            text-align: left;
-        }
-        ul {
-            display: block;
-            list-style-type: disc;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            padding-inline-start: 40px;
-        }
-        /* specific menu shiz */
-
-        /* sa may task na section */
-        .listOfStudents button{
-            margin: 30px;
-        }
-    </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="teachers.js"></script>
 </body>
 </html>
